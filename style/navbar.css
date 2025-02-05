@@ -1,0 +1,137 @@
+
+
+.navbar {
+    display: flex;
+    margin-top: 1.5em;
+    justify-content: space-between;
+    align-items:center;
+    /* margin-right: 5em; */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+}
+
+.navbar .logo h2 {
+    color: var(--white-color);
+    margin-top: .5em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.navbar .navbar-btns {
+    margin-right: 5em;
+}
+
+.navbar-btns {
+    display: flex;
+    width: 27em;
+    height: 4em;
+    background: #0F0F0F;
+    border-radius: .8em;
+    border: 4px solid #1F1F1F;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.navbar-btns a {
+    font-size: 0.875em;
+    color: #BFBFBF;
+}
+
+.active {
+    color: var(--white-color) !important;
+    background: #282727;
+    font-weight: 500;
+    padding: .8em 1.5em;
+    border-radius: .7em;
+}
+
+.navbar .navbar-icons {
+    display: flex;
+    gap: 1.8em;
+    margin-right: -4em;
+    cursor: pointer;
+}
+
+.navbar .navbar-icons .navbar-menu-icn-mb {
+    display: flex;
+    background: #1A1A1A;
+    width: 3.5em;
+    height: 3.5em;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #262626;
+    border-radius: .6em;
+    visibility: hidden;
+    opacity: 0 ;
+}
+.navbar .navbar-icons .navbar-menu-icn-mb img {
+    width: 1.8em;
+    height: 1.8em;
+    visibility: hidden ;
+    opacity: 0 ;
+}
+
+
+@media (max-width:391px) {
+    .navbar .navbar-btns  {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navbar .navbar-icons img:nth-of-type(1), .navbar .navbar-icons img:nth-of-type(2) {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+    .navbar .navbar-icons {
+        position: relative;
+        left: -100%;
+    }
+
+    .navbar {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 1em !important;
+        margin-right: 0em !important;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1em;
+    }
+
+    .navbar .logo img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .navbar .navbar-icons .navbar-menu-icn-mb {
+        visibility: visible !important;
+        opacity: 199 !important;
+        position: relative;
+        top: -6em;
+        right: -12em;
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 0 !important;
+        display: flex;
+        z-index: 99;
+    }
+    
+    .navbar .navbar-icons .navbar-menu-icn-mb img {
+        visibility: visible;
+        opacity: 199;
+        width: 1em;
+        height: 1em;
+        z-index: 99;
+        
+    }
+
+}

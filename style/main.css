@@ -75,7 +75,6 @@ body {
     color: var(--white-color);
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 13em;
     height: 3em;
     font-size: 0.875em;
@@ -83,14 +82,9 @@ body {
     border-radius: .6em;
 }
 
-.main .main-brief .main-brief-btn button i {
-    /* display: flex; */
-    position: absolute;
+.main .main-brief .main-brief-btn i {
     color: var(--white-color);
-    z-index: 99;
     align-items: center;
-    bottom: .99em;
-    left: 1em;
     
 }
 
@@ -98,6 +92,47 @@ body {
     margin-left: 1em;
 }
 
+
+/* start responsive */
+
+@media (max-width:1921px) {
+    .main .main-brief p:nth-of-type(1) {
+        width: 44%;
+    }
+
+}
+
+
+@media (max-width:1441px) {
+    .main .main-brief p:nth-of-type(1) {
+        width: 78%;
+    }
+
+    .main .main-brief .main-brief-btn button span {
+        margin-left: .5em;
+        font-weight: 800;
+    }
+}
+
+@media (max-width:913px) {
+}
+
+@media (max-width:750px) {
+     .main .main-brief h4 {
+        font-size: 1.8em;
+        margin-top: .5em;
+     }
+
+     .main .main-brief p {
+        font-size: .6em !important;
+        
+     }
+
+
+     .main .main-brief p:nth-of-type(1) {
+        width: 72%;
+     }
+}
 
 @media (max-width:391px) {
     
@@ -137,7 +172,7 @@ body {
     }
 
 
-
+    
 
     .main .main-brief .main-brief-btn button {
         width: 10em;

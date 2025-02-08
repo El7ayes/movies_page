@@ -1,0 +1,236 @@
+.categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+}
+
+.categories-header .categories-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.categories-header .categories-header-title h3 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.categories-header .categories-header-title p {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #999999;
+}
+
+.categories .categories-header .categories-header-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f0f;
+  width: 12.5em;
+  height: 4em;
+  border-radius: 0.6em;
+  border: 0.15em solid #1f1f1f;
+  gap: 0.5em;
+}
+
+.categories .categories-header .categories-header-arrows i {
+  color: var(--white-color);
+  background: #1a1a1a;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  border: 2.5px solid #1f1f1f;
+  cursor: pointer;
+}
+
+.categories .categories-header .categories-header-arrows .swipers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.categories-header
+  .categories-header-arrows
+  .swipers
+  .categories-header-arrows-swipers {
+  width: 1em;
+  height: 0.25em;
+  background: #333333;
+  border-radius: 6.25em;
+  cursor: pointer;
+}
+
+.active1 {
+  background: #e50000 !important;
+  width: 1.2em !important;
+}
+
+.categories .categories-body-cards {
+  display: flex;
+  gap: 1.5em !important;
+  padding: 4em;
+}
+
+.categories .categories-body-cards .categories-body-cards-card {
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 6em) / 5);
+  padding: 1.5em;
+  border-radius: 1.2em;
+  border: 2px solid #262626;
+}
+
+.categories .categories-body-cards .categories-body-cards-card img {
+  border-radius: 0.8em;
+  width: 100%;
+}
+
+.categories
+  .categories-body-cards
+  .categories-body-cards-card
+  .categories-body-cards-card-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--white-color);
+}
+
+.categories
+  .categories-body-cards
+  .categories-body-cards-card
+  .categories-body-cards-card-desc
+  h3 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+
+.categories
+  .categories-body-cards
+  .categories-body-cards-card
+  .categories-body-cards-card-desc
+  i {
+  cursor: pointer;
+}
+
+.p-width {
+  width: 70%;
+}
+
+.active2 {
+  background: #e50000 !important;
+  z-index: 99 !important;
+}
+
+.categories .mobile-swipers {
+  display: none;
+}
+
+
+.categories-header .categories-header-title .mobile-p {
+  display: none;
+}
+/* start responsive */
+
+@media (max-width: 1921px) {
+}
+
+@media (max-width: 1441px) {
+}
+
+@media (max-width: 750px) {
+}
+
+@media (max-width: 391px) {
+  .categories-header {
+    padding: 1em;
+    margin-top: 2em;
+  }
+
+  .categories-header .categories-header-title h3 {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .categories-header .categories-header-title p {
+    width: 100%;
+    font-size: 0.875em;
+  }
+
+  .categories .categories-body-cards {
+    overflow: hidden;
+    padding: 1em;
+    gap: 1em !important;
+  }
+
+  .categories .categories-body-cards .categories-body-cards-card {
+    width: calc((100% - 0.1em) / 2);
+    border-radius: 0.5em;
+    font-size: 3em;
+    padding: 0.5em;
+  }
+
+  .categories
+    .categories-body-cards
+    .categories-body-cards-card
+    .categories-body-cards-card-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.5em;
+    width: 139px;
+  }
+
+  .categories
+    .categories-body-cards
+    .categories-body-cards-card
+    .categories-body-cards-card-desc
+    h3 {
+    font-size: 0.6em;
+  }
+
+  .categories .categories-body-cards .categories-body-cards-card img {
+    width: 110%;
+    border-radius: 0.2em;
+  }
+
+  .categories .categories-header .categories-header-arrows {
+    display: none;
+  }
+
+  .categories .mobile-swipers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+  }
+
+  .categories .categories-header-arrows-swipers-mb {
+    background: #333333;
+    width: 1.5em;
+    height: 0.3125em;
+    border-radius: 1.25em;
+    margin-left: -0.2em;
+  }
+
+  .categories .categories-header .categories-header-title .desk-p {
+    display: none;
+  
+  }
+
+  .categories-header .categories-header-title .mobile-p {
+    display: flex !important;
+  
+  }
+  
+}

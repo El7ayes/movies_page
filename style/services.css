@@ -1,0 +1,106 @@
+.home-services .home-services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em !important;
+  padding: 4em;
+}
+
+.home-services .home-services-cards .home-services-cards-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top right, #e5000000 60%, #580707);
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 4.5em) / 3);
+  padding: 1.5em;
+  border-radius: 1.2em;
+  border: 2px solid #262626;
+}
+
+.home-services
+  .home-services-cards
+  .home-services-cards-card
+  .home-services-cards-card-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+  margin-bottom: 1.2em;
+}
+
+.home-services
+  .home-services-cards
+  .home-services-cards-card
+  .home-services-cards-card-header
+  .home-services-cards-card-header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #1d1a1a; */
+  background: #171616;
+  border: 2.3px solid #1f1f1f;
+  border-radius: 0.8em;
+  width: 4em;
+  height: 4em;
+}
+
+.home-services
+  .home-services-cards
+  .home-services-cards-card
+  .home-services-cards-card-header
+  .home-services-cards-card-header-img
+  img {
+  width: 2.2em;
+  height: 2.2em;
+}
+
+.home-services
+  .home-services-cards
+  .home-services-cards-card
+  .home-services-cards-card-header
+  h4 {
+  color: var(--white-color);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.home-services
+  .home-services-cards
+  .home-services-cards-card
+  .home-services-cards-card-body
+  p {
+  color: #999999;
+  font-size: 0.9em;
+  width: 90%;
+  line-height: 1.5em;
+}
+
+@media (max-width: 391px) {
+  .home-services .home-services-cards {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .home-services .home-services-cards .home-services-cards-card {
+    width: 150%;
+    height: 175px;
+    padding: 1.8em;
+  }
+
+  .home-services
+    .home-services-cards
+    .home-services-cards-card
+    .home-services-cards-card-header {
+    font-size: 0.8em;
+  }
+
+  .home-services
+    .home-services-cards
+    .home-services-cards-card
+    .home-services-cards-card-body
+    p {
+    font-size: 0.8em;
+  }
+}

@@ -1,210 +1,193 @@
 @import "./reset.css";
 @import "./variables.css";
 @import "./navbar.css";
-
+@import "./categories.css";
+@import "./services.css";
+@import "./question.css";
 
 body {
-    background: #101010;
+  background: #141313;
 }
 
-
-
 .main {
-    width: 100%;
-    height: 90%;
-    margin-top: -6.5em;
+  width: 100%;
+  height: 90%;
+  margin-top: -6.5em;
 }
 
 .main img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .main .main-brief {
-    display: flex;
-    flex-direction: column;
-    margin-top: -7em;
+  display: flex;
+  flex-direction: column;
+  margin-top: -7em;
 }
 
 .main .main-brief h4 {
-    color: var(--white-color);
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: .8em;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+  color: var(--white-color);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 }
 
-
 .main .main-brief p:nth-of-type(1) {
-    display: flex;
-    color: #999999;
-    font-size: 0.875em;
-    width: 75%;
-    margin-bottom: 2.5em;
-    margin: auto;
-    text-align: center;
+  display: flex;
+  color: #999999;
+  font-size: 0.875em;
+  width: 75%;
+  margin-bottom: 2.5em;
+  margin: auto;
+  text-align: center;
 }
 
 .main .main-brief p:nth-of-type(2) {
-    display: flex;
-    color: #999999;
-    font-size: 0.875em;
-    width: 75%;
-    margin-bottom: 2.5em;
-    margin: auto;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
+  display: flex;
+  color: #999999;
+  font-size: 0.875em;
+  width: 75%;
+  margin-bottom: 2.5em;
+  margin: auto;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
 }
 
-
-
 .main .main-brief .main-brief-btn {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 .main .main-brief .main-brief-btn button {
-    display: flex;
-    background: #E50000;
-    color: var(--white-color);
-    justify-content: center;
-    align-items: center;
-    width: 13em;
-    height: 3em;
-    font-size: 0.875em;
-    border: 0;
-    border-radius: .6em;
+  display: flex;
+  background: #e50000;
+  color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+  width: 13em;
+  height: 3em;
+  font-size: 0.875em;
+  border: 0;
+  border-radius: 0.6em;
 }
 
 .main .main-brief .main-brief-btn i {
-    color: var(--white-color);
-    align-items: center;
-    
+  color: var(--white-color);
+  align-items: center;
 }
 
 .main .main-brief .main-brief-btn button span {
-    margin-left: 1em;
+  margin-left: 1em;
 }
-
 
 /* start responsive */
 
-@media (max-width:1921px) {
-    .main .main-brief p:nth-of-type(1) {
-        width: 44%;
-    }
-
+@media (max-width: 1921px) {
+  .main .main-brief p:nth-of-type(1) {
+    width: 44%;
+  }
 }
 
+@media (max-width: 1441px) {
+  .main .main-brief p:nth-of-type(1) {
+    width: 78%;
+  }
 
-@media (max-width:1441px) {
-    .main .main-brief p:nth-of-type(1) {
-        width: 78%;
-    }
-
-    .main .main-brief .main-brief-btn button span {
-        margin-left: .5em;
-        font-weight: 800;
-    }
+  .main .main-brief .main-brief-btn button span {
+    margin-left: 0.5em;
+    font-weight: 800;
+  }
 }
 
-@media (max-width:913px) {
+@media (max-width: 913px) {
 }
 
-@media (max-width:750px) {
-     .main .main-brief h4 {
-        font-size: 1.8em;
-        margin-top: .5em;
-     }
+@media (max-width: 750px) {
+  .main .main-brief h4 {
+    font-size: 1.8em;
+    margin-top: 0.5em;
+  }
 
-     .main .main-brief p {
-        font-size: .6em !important;
-        
-     }
+  .main .main-brief p {
+    font-size: 0.6em !important;
+  }
 
-
-     .main .main-brief p:nth-of-type(1) {
-        width: 72%;
-     }
+  .main .main-brief p:nth-of-type(1) {
+    width: 72%;
+  }
 }
 
-@media (max-width:391px) {
-    
-    .main .main-img img {
-        width: 100%;
-        height: 31.5em;
-        object-fit: cover !important;
-        margin-top: .1em;
-    }
+@media (max-width: 391px) {
+  .main .main-img img {
+    width: 100%;
+    height: 31.5em;
+    object-fit: cover !important;
+    margin-top: 0.1em;
+  }
 
-    .main .main-brief h4 {
-        text-align: center;
-        width: 100%;
-        height: 5em;
-        margin-top: .8em;
-        font-size: 1.75em;
-        line-height: 1.5em;
-        margin-bottom: -2.9em;
-    }
-    
-    .main .main-brief p:nth-of-type(1) {
-        width: 100%;
-        height: 3.9em;
-        font-size: 0.875em;
-        /* text-align: center; */
-        visibility: hidden;
-        opacity: 0;
-    }
+  .main .main-brief h4 {
+    text-align: center;
+    width: 100%;
+    height: 5em;
+    margin-top: 0.8em;
+    font-size: 1.75em;
+    line-height: 1.5em;
+    margin-bottom: -2.9em;
+  }
 
-    .main .main-brief p:nth-of-type(2) {
-        width: 100%;
-        height: 3.9em;
-        font-size: 0.875em;
-        visibility: visible;
-        opacity: 99;
+  .main .main-brief p:nth-of-type(1) {
+    width: 100%;
+    height: 3.9em;
+    font-size: 0.875em;
+    /* text-align: center; */
+    visibility: hidden;
+    opacity: 0;
+  }
 
-    }
+  .main .main-brief p:nth-of-type(2) {
+    width: 100%;
+    height: 3.9em;
+    font-size: 0.875em;
+    visibility: visible;
+    opacity: 99;
+  }
 
+  .main .main-brief .main-brief-btn button {
+    width: 10em;
+    height: 2em;
+  }
+  .main .main-brief .main-brief-btn button span {
+    font-size: 0.8em;
+  }
 
-    
+  .main .main-brief .main-brief-btn button i {
+    font-size: 0.9em;
+    left: 0.7em;
+    bottom: 0.6em;
+  }
 
-    .main .main-brief .main-brief-btn button {
-        width: 10em;
-        height: 2em;
-    }
-    .main .main-brief .main-brief-btn button span {
-        font-size:.8em;
-    }
+  .main .main-brief .main-brief-btn button {
+    width: 54%;
+    height: 3.25em;
+  }
 
-    .main .main-brief .main-brief-btn button i {
-        font-size: .9em;
-        left: .7em;
-        bottom: .6em;
-    }
+  .main .main-brief .main-brief-btn button span {
+    font-size: 0.875em;
+    font-weight: 600;
+  }
 
-    .main .main-brief .main-brief-btn button {
-        width: 54%;
-        height: 3.25em ;
-    }
-
-    .main .main-brief .main-brief-btn button span {
-        font-size: 0.875em;
-        font-weight: 600;
-    }
-
-    .main .main-brief .main-brief-btn button i {
-        width: 1.5em;
-        height: 1.5em;
-        bottom: .8em;
-        left: 2.5em;
-    }
-
-
-
+  .main .main-brief .main-brief-btn button i {
+    width: 1.5em;
+    height: 1.5em;
+    bottom: 0.8em;
+    left: 2.5em;
+  }
 }

@@ -4,6 +4,7 @@
 @import "./categories.css";
 @import "./services.css";
 @import "./question.css";
+@import "./price.css";
 
 body {
   background: #141313;

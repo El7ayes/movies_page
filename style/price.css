@@ -9,8 +9,6 @@
     margin-bottom: 4em;
 }
 
-
-
 .price .price-title .price-header h4 {
     font-size: 2.2em;
     font-weight: 700;
@@ -18,7 +16,6 @@
     letter-spacing: .1em;
     color: var(--white-color);
 }
-
 
 .price .price-title .price-header p {
     font-size: 1em;
@@ -40,7 +37,6 @@
     gap: .5em;
 }
 
-
 .price .price-title .price-btns a:nth-of-type(1) {
     color: var(--white-color);
     font-size: 1.1em;
@@ -56,14 +52,11 @@
     font-weight: 500;
 }
 
-
-
 .price .price-cards {
     display: flex;
     gap: 1.5em;
     width: 100%;
 }
-
 
 .price .price-cards .price-cards-card {
     display: flex;
@@ -146,6 +139,7 @@
     text-align: center;
 }
 
+/* start responsive  */
 
 @media (max-width: 391px) {
     .price {
@@ -180,13 +174,32 @@
     }
 
     .price .price-title .price-btns {
-        width: 200px;
-        justify-content: space-around ;
-        gap: 1.3em;
+        width: 160px !important;
+        justify-content: space-around;
+        gap: .7em !important;
+        padding: .4em;
+    }
+
+    .price .price-title .price-btns a:nth-of-type(1) {
+        font-size: 1em;
+    }
+
+    .price .price-title .price-btns a:nth-of-type(2) {
+        font-size: .9em;
+    }
+
+    .price .price-cards .price-cards-card {
+        padding: 1.1em;
+        
+    }
+
+    .price .price-cards .price-cards-card .price-cards-card-btns{
+        width: 100%;
+        gap: 1em;
     }
 
     .price .price-cards .price-cards-card .price-cards-card-btns a {
         font-size: .69em;
+        width: 100%;
     }
-
 }

@@ -5,6 +5,7 @@
 @import "./services.css";
 @import "./question.css";
 @import "./price.css";
+@import "./free-trial.css";
 
 body {
   background: #141313;

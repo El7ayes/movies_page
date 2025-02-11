@@ -95,7 +95,6 @@
     align-self: flex-start;
 }
 
-
 .price .price-cards .price-cards-card .price-cards-card-money h4 {
     color: var(--white-color);
     font-size: 2em;
@@ -129,7 +128,6 @@
     border: 3px solid #262626;
     text-align: center;
 }
-
 
 .price .price-cards .price-cards-card .price-cards-card-btns a:nth-of-type(2) {
     background: #E50000;

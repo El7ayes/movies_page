@@ -6,6 +6,7 @@
 @import "./question.css";
 @import "./price.css";
 @import "./free-trial.css";
+@import "./footer.css";
 
 body {
   background: #141313;

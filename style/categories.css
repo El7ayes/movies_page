@@ -136,7 +136,6 @@
   display: none;
 }
 
-
 .categories-header .categories-header-title .mobile-p {
   display: none;
 }
@@ -225,12 +224,9 @@
 
   .categories .categories-header .categories-header-title .desk-p {
     display: none;
-  
   }
 
   .categories-header .categories-header-title .mobile-p {
     display: flex !important;
-  
   }
-  
 }
